@@ -1,5 +1,5 @@
 //Program to demonstrate final method 
-package com.tnsif.day6.usingfinal;
+package com.tns.ifet.day6.usingfinal;
 
 public class FinalMethodClassTest extends FinalMethodClass  {
 	  // Compile time error because we cannot override the final method 
