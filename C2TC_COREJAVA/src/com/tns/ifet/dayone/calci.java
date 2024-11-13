@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class calci{
      public static void main(String[] args) {
-    	 Scanner sc=new Scanner(System.in);
+    	  Scanner sc=new Scanner(System.in);
     	 System.out.println("Enter the operator +,-,*,/");
     	 char op = sc.next().trim().charAt(0);
     	 
@@ -35,5 +35,6 @@ public class calci{
     	 {
     		 System.out.println("Invalid Expresion");
     	 }
+
 }
 }

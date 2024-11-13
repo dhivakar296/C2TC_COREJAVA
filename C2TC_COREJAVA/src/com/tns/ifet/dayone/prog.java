@@ -11,6 +11,7 @@ public class prog {
          String sg=sc.next();
          System.out.println("the value of n is:"+n);
          System.out.println("the value of string is:"+sg);
+ 
 	}
 
 }

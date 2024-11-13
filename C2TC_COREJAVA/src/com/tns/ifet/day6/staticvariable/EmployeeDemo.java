@@ -1,6 +1,8 @@
-package com.tns.ifet.dayfive;
+//Program to demonstrate static variables
+package com.tns.ifet.day6.staticvariable;
 
 public class EmployeeDemo {
+
 	public static void main(String[] args) {
 		// Create the first object of the class and pass the two arguments with type
 		// string and int.
@@ -12,5 +14,4 @@ public class EmployeeDemo {
 		e = new Employee("Deep", 321);
 		System.out.println(e);
 	}
-
 }

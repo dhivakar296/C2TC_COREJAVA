@@ -1,7 +1,5 @@
-package com.tns.ifet.dayone;
-
 //Program to demonstrate static variable
-package com.tnsif.daysix.staticvariable;
+package com.tns.ifet.day6.staticvariable;
 
 public class Employee {
 	// Declare instance variables.
@@ -26,4 +24,3 @@ public class Employee {
 	
 
 }
-
