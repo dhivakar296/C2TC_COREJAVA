@@ -3,7 +3,6 @@ package com.tns.ifet.builtinobj;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
@@ -12,7 +11,7 @@ public class ArrayListDemo {
 
 	public static void main(String[] args) {
 
-		List list1 = new ArrayList();// creates empty raw ArrayList (allows heterogeneous elements)
+		List<Object> list1 = new ArrayList<Object>();// creates empty raw ArrayList (allows heterogeneous elements)
 		System.out.println("Size : "+list1.size());
 		System.out.println("Is list empty? "+list1.isEmpty());
 		list1.add(10);

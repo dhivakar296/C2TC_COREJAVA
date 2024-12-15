@@ -1,42 +1,38 @@
 //Program to define base class Employee
 package com.tns.ifet.dayfive.multiilevelinheritance;
 
-import java.util.Date;
-
-import com.tns.ifet.dayfive.multiilevelinheritance.Person;
+import java.time.LocalDate;
 
 public class Employee extends Person {
-	private String deptName;
-	private double baseSalary;
-	
-	public Employee() {}
+    private String deptName;
+    private double baseSalary;
 
-	public Employee(String name, long contactNo, Date dateOfBirth, String deptName, double baseSalary) {
-		super(name, contactNo, dateOfBirth);
-		this.deptName = deptName;
-		this.baseSalary = baseSalary;
-	}
+    public Employee() {}
 
-	public String getDeptName() {
-		return deptName;
-	}
+    public Employee(String name, long contactNo, LocalDate dateOfBirth, String deptName, double baseSalary) {
+        super(name, contactNo, dateOfBirth);
+        this.deptName = deptName;
+        this.baseSalary = baseSalary;
+    }
 
-	public void setDeptName(String deptName) {
-		this.deptName = deptName;
-	}
+    public String getDeptName() {
+        return deptName;
+    }
 
-	public double getBaseSalary() {
-		return baseSalary;
-	}
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
 
-	public void setBaseSalary(double baseSalary) {
-		this.baseSalary = baseSalary;
-	}
+    public double getBaseSalary() {
+        return baseSalary;
+    }
 
-	@Override
-	public String toString() {
-		return "Employee ["+super.toString()+", deptName=" + deptName + ", baseSalary=" + baseSalary + "]";
-	}
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
+    }
 
-	
+    @Override
+    public String toString() {
+        return "Employee [" + super.toString() + ", deptName=" + deptName + ", baseSalary=" + baseSalary + "]";
+    }
 }

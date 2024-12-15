@@ -1,50 +1,50 @@
 //Program to define base class Person
 package com.tns.ifet.dayfive.multiilevelinheritance;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Person {
-	private String name;
-	private long conatctNo;
-	private Date dateOfBirth;
+    private String name;
+    private long contactNo;
+    private LocalDate dateOfBirth; // Use LocalDate instead of Date
 
-	public Person(String name, long conatctNo, Date dateOfBirth) {
-		super();
-		this.name = name;
-		this.conatctNo = conatctNo;
-		this.dateOfBirth = dateOfBirth;
-	}
+    // Parameterized constructor
+    public Person(String name, long contactNo, LocalDate dateOfBirth) {
+        this.name = name;
+        this.contactNo = contactNo;
+        this.dateOfBirth = dateOfBirth;
+    }
 
-	public String getName() {
-		return name;
-	}
+    // Default constructor
+    public Person() {}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
 
-	public long getConatctNo() {
-		return conatctNo;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setConatctNo(long conatctNo) {
-		this.conatctNo = conatctNo;
-	}
+    public long getContactNo() {
+        return contactNo;
+    }
 
-	public Date getDateOfBirth() {
-		return dateOfBirth;
-	}
+    public void setContactNo(long contactNo) {
+        this.contactNo = contactNo;
+    }
 
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
 
-	public Person() {
-	}
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", conatctNo=" + conatctNo + ", dateOfBirth=" + dateOfBirth + "]";
-	}
-
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", contactNo=" + contactNo + ", dateOfBirth=" + dateOfBirth + "]";
+    }
 }
